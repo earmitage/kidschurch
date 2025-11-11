@@ -1,8 +1,22 @@
 {
   "name": "church-games",
   "version": "1.0.0",
-  "description": "Pamphlet generator for Rhema Kids Church",
+  "description": "AI-powered pamphlet generator for kids church - Create printable activities with mazes, word searches, coloring pages, and quizzes",
   "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/church-games.git"
+  },
+  "keywords": [
+    "kids-church",
+    "children-ministry",
+    "printable-activities",
+    "church-games",
+    "bible-activities",
+    "ai-generated-content",
+    "pamphlet-generator"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build --mode production",

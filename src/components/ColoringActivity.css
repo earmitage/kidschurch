@@ -1,0 +1,38 @@
+.coloring-activity {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  gap: 5mm;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.coloring-text-wrapper {
+  flex: 0 0 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0; /* Important for flexbox to respect max-height */
+  max-height: 20%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.coloring-scene-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0; /* Important for flexbox to respect max-height */
+  max-height: 80%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+@media print {
+  .coloring-activity {
+    gap: 8mm;
+  }
+}
+

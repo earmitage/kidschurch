@@ -1,0 +1,354 @@
+# =============================================================================
+# Environment Variables - NEVER COMMIT THESE
+# =============================================================================
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.*.local
+*.env
+backend/.env
+backend/.env.local
+backend/.env.*
+frontend/.env
+frontend/.env.local
+frontend/.env.*
+.env.backup
+.env.bak
+
+# =============================================================================
+# Frontend (Node.js/React/Vite)
+# =============================================================================
+# Dependencies
+node_modules/
+jspm_packages/
+
+# npm
+npm-debug.log*
+npm-shrinkwrap.json
+# package-lock.json - Many teams commit this for reproducible builds
+# Uncomment the line below if you want to exclude it:
+# package-lock.json
+
+# npm cache
+.npm/
+.npmrc
+# Note: .npmrc might contain project-specific config that should be committed
+# Only exclude if it contains sensitive data
+
+# Yarn
+yarn-debug.log*
+yarn-error.log*
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+.yarn-integrity
+# yarn.lock - Many teams commit this for reproducible builds
+# Uncomment the line below if you want to exclude it:
+# yarn.lock
+
+# Yarn v2+ (Berry)
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+.yarnrc.yml
+# Note: .yarnrc.yml might contain project config that should be committed
+
+# pnpm
+pnpm-debug.log*
+.pnpm-store/
+# pnpm-lock.yaml - Many teams commit this for reproducible builds
+# Uncomment the line below if you want to exclude it:
+# pnpm-lock.yaml
+
+# Lerna
+lerna-debug.log*
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+*.local
+
+# Vite
+.vite/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Build tool caches
+.cache/
+.parcel-cache/
+.rollup.cache/
+.turbo/
+.next/
+.nuxt/
+.output/
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# =============================================================================
+# Backend (Python/FastAPI)
+# =============================================================================
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv
+env.bak/
+venv.bak/
+.conda/
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# =============================================================================
+# Generated Files & Data
+# =============================================================================
+# PDFs (generated pamphlets)
+backend/pdfs/
+*.pdf
+!backend/pdfs/.gitkeep
+
+# Preview images
+*.png
+!src/components/**/*.png
+!public/**/*.png
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# Logs
+*.log
+logs/
+*.log.*
+# npm/yarn/pnpm logs are already excluded in Frontend section above
+
+# =============================================================================
+# IDE & Editor Files
+# =============================================================================
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ IDEA / PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# OS Files
+# =============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# Temporary & Backup Files
+# =============================================================================
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+*.swp
+*.swo
+*~
+.cache/
+tmp/
+temp/
+
+# =============================================================================
+# Security & Secrets
+# =============================================================================
+# API Keys & Secrets
+secrets/
+*.pem
+*.key
+*.crt
+*.cert
+*.p12
+*.pfx
+id_rsa
+id_rsa.pub
+*.secret
+*.private
+
+# =============================================================================
+# Deployment & Production
+# =============================================================================
+# PM2
+.pm2/
+ecosystem.config.js
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# =============================================================================
+# Misc
+# =============================================================================
+# Note: Lock files (package-lock.json, yarn.lock, pnpm-lock.yaml) are handled
+# in the Frontend section above. Uncomment them there if you want to exclude them.
+
+# Local configuration
+local/
+local.*
+*.local
+
+# Debug
+debug.log
+*.debug
+
+# Profiling
+*.prof

@@ -1,0 +1,13 @@
+.coloring-diagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coloring-canvas {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: crosshair;
+}
+
+

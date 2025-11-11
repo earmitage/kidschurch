@@ -1,0 +1,291 @@
+.pamphlet-history {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.history-header {
+  margin-bottom: 30px;
+}
+
+.history-title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.history-title-section h1 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 2em;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+.back-button:hover {
+  background: #2980b9;
+}
+
+.search-section {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.search-inputs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+.search-button:hover {
+  background: #229954;
+}
+
+.clear-button {
+  padding: 10px 15px;
+  background: #95a5a6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+.clear-button:hover {
+  background: #7f8c8d;
+}
+
+.loading-state,
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #7f8c8d;
+}
+
+.empty-state p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.empty-hint {
+  font-size: 0.9em !important;
+  color: #95a5a6;
+}
+
+.pamphlets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.pamphlet-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pamphlet-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.pamphlet-card-header {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.pamphlet-card-header h3 {
+  margin: 0 0 8px 0;
+  color: #2c3e50;
+  font-size: 1.2em;
+}
+
+.pamphlet-theme {
+  display: inline-block;
+  background: #3498db;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+.pamphlet-card-info {
+  margin-bottom: 15px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+}
+
+.info-label {
+  color: #7f8c8d;
+  font-weight: 500;
+}
+
+.info-value {
+  color: #2c3e50;
+}
+
+.pamphlet-card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.download-button,
+.delete-button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: all 0.3s;
+}
+
+.download-button {
+  background: #27ae60;
+  color: white;
+}
+
+.download-button:hover:not(:disabled) {
+  background: #229954;
+}
+
+.delete-button {
+  background: #e74c3c;
+  color: white;
+}
+
+.delete-button:hover:not(:disabled) {
+  background: #c0392b;
+}
+
+.download-button:disabled,
+.delete-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.page-button {
+  padding: 10px 20px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+.page-button:hover:not(:disabled) {
+  background: #2980b9;
+}
+
+.page-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-info {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.error-message {
+  background: #fee;
+  color: #c33;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #fcc;
+}
+
+@media (max-width: 768px) {
+  .pamphlets-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .search-inputs {
+    flex-direction: column;
+  }
+  
+  .search-input {
+    width: 100%;
+  }
+  
+  .history-title-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .pagination {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+

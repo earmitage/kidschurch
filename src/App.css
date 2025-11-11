@@ -1,0 +1,36 @@
+/* App component styles */
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-footer {
+  margin-top: auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff;
+  border-top: 1px solid #e0e0e0;
+}
+
+.app-footer p {
+  margin: 0.5rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.footer-link {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-tagline {
+  font-size: 0.85rem;
+  color: #999;
+}
+

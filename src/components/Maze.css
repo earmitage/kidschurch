@@ -1,0 +1,37 @@
+.maze-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 8px;
+}
+
+.maze-canvas {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.maze-canvas:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.maze-hint {
+  font-size: 10px;
+  color: #7f8c8d;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+}
+
+/* Hide hint text when printing/exporting to PDF */
+@media print {
+  .maze-hint {
+    display: none !important;
+  }
+}
+

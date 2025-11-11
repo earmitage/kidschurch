@@ -1,0 +1,14 @@
+.tictactoe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tictactoe-canvas {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+

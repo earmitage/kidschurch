@@ -1,0 +1,26 @@
+{
+  "name": "church-games",
+  "version": "1.0.0",
+  "description": "Pamphlet generator for Rhema Kids Church",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --mode production",
+    "build:prod": "vite build --mode production",
+    "build:dev": "vite build --mode development",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "jspdf": "^2.5.1",
+    "html2canvas": "^1.4.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.8"
+  }
+}
+

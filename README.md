@@ -49,7 +49,7 @@ A full-stack web application that helps kids church leaders create engaging, age
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/earmitage/kidscurch.git
+   git clone https://github.com/earmitage/kidschurch.git
    cd church-games
    ```
 
